@@ -36,8 +36,13 @@
             <li class="nav-item"><a class="nav-link" href="">Portfolio</a></li>
             <li class="nav-item"><a class="nav-link" href="">Contacts</a></li>
           </ul>
+          <button class="mobile-menu-btn js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="mobile-menu-icon" width="24" height="24">
+              <use href="./images/icons.svg#burger-menu"></use>
+            </svg>
+          </button>
         </nav>
-        <address class="contact">
+        <address class="nav-contact">
           <ul class="contact-list">
             <li class="contact-item">
               <a class="contact-link" href="mailto:info@devstudio.com"
@@ -71,8 +76,8 @@
       <section class="section adv">
         <div class="container">
           <h2 class="visually-hidden">Advantages</h2>
-          <ul class="adv-list">
-            <li class="adv-item">
+          <ul class="card-set adv-list">
+            <li class="card-set-item adv-item">
               <div class="adv-icon-wrapper">
                 <svg class="adv-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
@@ -84,7 +89,7 @@
                 the perfect and creative solution.
               </p>
             </li>
-            <li class="adv-item">
+            <li class="card-set-item adv-item">
               <div class="adv-icon-wrapper">
                 <svg class="adv-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
@@ -96,7 +101,7 @@
                 within the shortest possible time.
               </p>
             </li>
-            <li class="adv-item">
+            <li class="card-set-item adv-item">
               <div class="adv-icon-wrapper">
                 <svg class="adv-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
@@ -108,7 +113,7 @@
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li class="adv-item">
+            <li class="card-set-item adv-item">
               <div class="adv-icon-wrapper">
                 <svg class="adv-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut"></use>
@@ -133,7 +138,11 @@
             <li class="team-item card-set-item">
               <img
                 class="team-image"
-                src="./images/team/img01.jpg"
+                srcset="
+                  ./images/team/img01@1x.jpg 1x, 
+                  ./images/team/img01@2x.jpg 2x
+                "
+                src="./images/team/img01@1x.jpg"
                 alt="Photo of Mark Guerrero"
                 width="264"
                 height="260"
@@ -200,7 +209,11 @@
             <li class="team-item card-set-item">
               <img
                 class="team-image"
-                src="./images/team/img02.jpg"
+                srcset="
+                  ./images/team/img02@1x.jpg 1x, 
+                  ./images/team/img02@2x.jpg 2x
+                "
+                src="./images/team/img02@1x.jpg"
                 alt="Photo of Tom Ford"
                 width="264"
                 height="260"
@@ -267,7 +280,11 @@
             <li class="team-item card-set-item">
               <img
                 class="team-image"
-                src="./images/team/img03.jpg"
+                srcset="
+                  ./images/team/img03@1x.jpg 1x, 
+                  ./images/team/img03@2x.jpg 2x
+                "
+                src="./images/team/img03@1x.jpg"
                 alt="Photo of Camila Garcia"
                 width="264"
                 height="260"
@@ -334,7 +351,11 @@
             <li class="team-item card-set-item">
               <img
                 class="team-image"
-                src="./images/team/img04.jpg"
+                srcset="
+                  ./images/team/img04@1x.jpg 1x, 
+                  ./images/team/img04@2x.jpg 2x
+                "
+                src="./images/team/img04@1x.jpg"
                 alt="Photo of Daniel Wilson"
                 width="264"
                 height="260"
@@ -412,7 +433,11 @@
               <div class="portfolio-wrapper">
                 <img
                   class="portfolio-image"
-                  src="./images/portfolio/img01.jpg"
+                  srcset="
+                    ./images/portfolio/img01@1x.jpg 1x, 
+                    ./images/portfolio/img01@2x.jpg 2x
+                  "
+                  src="./images/portfolio/img01@1x.jpg"
                   alt="Image of banking app"
                   width="360"
                   height="300"
@@ -432,7 +457,11 @@
               <div class="portfolio-wrapper">
                 <img
                   class="portfolio-image"
-                  src="./images/portfolio/img02.jpg"
+                  srcset="
+                    ./images/portfolio/img02@1x.jpg 1x, 
+                    ./images/portfolio/img02@2x.jpg 2x
+                  "
+                  src="./images/portfolio/img02@1x.jpg"
                   alt="Image of cashless payment"
                   width="360"
                   height="300"
@@ -452,7 +481,11 @@
               <div class="portfolio-wrapper">
                 <img
                   class="portfolio-image"
-                  src="./images/portfolio/img03.jpg"
+                  srcset="
+                    ./images/portfolio/img03@1x.jpg 1x, 
+                    ./images/portfolio/img03@2x.jpg 2x
+                  "
+                  src="./images/portfolio/img03@1x.jpg"
                   alt="Image of meditation app"
                   width="360"
                   height="300"
@@ -472,7 +505,11 @@
               <div class="portfolio-wrapper">
                 <img
                   class="portfolio-image"
-                  src="./images/portfolio/img04.jpg"
+                  srcset="
+                    ./images/portfolio/img04@1x.jpg 1x, 
+                    ./images/portfolio/img04@2x.jpg 2x
+                  "
+                  src="./images/portfolio/img04@1x.jpg"
                   alt="Image of taxi service"
                   width="360"
                   height="300"
@@ -492,7 +529,11 @@
               <div class="portfolio-wrapper">
                 <img
                   class="portfolio-image"
-                  src="./images/portfolio/img05.jpg"
+                  srcset="
+                    ./images/portfolio/img05@1x.jpg 1x, 
+                    ./images/portfolio/img05@2x.jpg 2x
+                  "
+                  src="./images/portfolio/img05@1x.jpg"
                   alt="Image of screen illustration"
                   width="360"
                   height="300"
@@ -512,7 +553,11 @@
               <div class="portfolio-wrapper">
                 <img
                   class="portfolio-image"
-                  src="./images/portfolio/img06.jpg"
+                  srcset="
+                    ./images/portfolio/img06@1x.jpg 1x, 
+                    ./images/portfolio/img06@2x.jpg 2x
+                  "
+                  src="./images/portfolio/img06@1x.jpg"
                   alt="Image of online courses"
                   width="360"
                   height="300"
@@ -628,7 +673,7 @@
     </footer>
     <!-- #endregion -->
 
-    <!-- #region modal -->
+    <!-- #region Modal -->
     <div class="modal-overlay js-modal">
       <div class="modal">
         <button class="modal-btn js-close-modal" type="button">
@@ -725,5 +770,94 @@
       </div>
     </div>
     <!-- #endregion -->
+
+    <!-- #region Mobile-menu -->
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button class="mobile-menu-btn js-close-menu" type="button">
+        <svg width="8" height="8">
+          <use href="./images/icons.svg#close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu-nav">
+        <li class="mobile-menu-nav-item">
+          <a class="mobile-menu-nav-link current" href="#">Studio</a>
+        </li>
+        <li class="mobile-menu-nav-item">
+          <a class="mobile-menu-nav-link" href="#">Portfolio</a>
+        </li>
+        <li class="mobile-menu-nav-item">
+          <a class="mobile-menu-nav-link" href="#">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-menu-contacts">
+        <li class="mobile-menu-contacts-item">
+          <a class="mobile-menu-contacts-link accent" href="tel:+110001111111">+11 (000) 111-11-11</a>
+        </li class="mobile-menu-contacts-item">
+        <li>
+          <a class="mobile-menu-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="socials mobile-menu-socials">
+        <li class="socials-item">
+          <a
+            class="socials-link"
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to instagram.com"
+          >
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a
+            class="socials-link"
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to twitter.com"
+          >
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a
+            class="socials-link"
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to facebook.com"
+          >
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a
+            class="socials-link"
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to linkedin.com"
+          >
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- #endregion -->
+
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/form.js"></script>
   </body>
 </html>
